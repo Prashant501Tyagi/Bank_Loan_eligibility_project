@@ -1,4 +1,8 @@
-Loan Approval/Eligibility Problem
+SYL bank is one of Australia�s largest banks. Currently, the loan applications which come in to their various branches are processed manually. The decision whether to grant a loan or not is subjective and due to a lot of applications coming in, it is getting harder for them to decide the loan grant status. Thus, they want to build an automated machine learning solution which will look at different factors and decide whether to grant loan or not to the respective individual.
+
+In this ML problem, we will building a classification model as we have to predict if an applicant should get a loan or not. We will look at various factors of the applicant like credit score, past history and from those we will try to predict the loan granting status. We will also cleanse the data and fill in the missing values so that our ML model performs as expected. Thus we will be giving out a probability score along with Loan Granted or Loan Refused output from the model.
+
+Loan Approval/Eligibility Problem: ---
 This dataset concerns loan data. When a customer applies for
 a loan at our company, we use statistical models to
 determine whether or not to grant the loan based on the
@@ -13,7 +17,7 @@ generated specifically for use in this project. The data is
 designed to exhibit similar characteristics to genuine loan
 data.
 
-Description
+Description: ---
 In this dataset, you must explore and cleanse a dataset
 consisting of over 1,00,000 loan records to determine the
 best way to predict whether a loan applicant should be
@@ -23,7 +27,7 @@ loan status label that indicates whether the loan should be
 given to that individual or not.
 
 Data filesThe dataset consists of the
-following fields:
+following fields: ---
 • Loan ID: A unique Identifier for the loan information.
 • Customer ID: A unique identifier for the customer.
 Customers may have more than one loan.
