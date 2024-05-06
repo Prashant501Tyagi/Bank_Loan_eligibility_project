@@ -1,162 +1,49 @@
-SYL bank is one of Australia�s largest banks. Currently, the loan applications which come in to their various branches are processed manually. The decision whether to grant a loan or not is subjective and due to a lot of applications coming in, it is getting harder for them to decide the loan grant status. Thus, they want to build an automated machine learning solution which will look at different factors and decide whether to grant loan or not to the respective individual.
+# SYL Bank Loan Approval Prediction Model
 
-In this ML problem, we will building a classification model as we have to predict if an applicant should get a loan or not. We will look at various factors of the applicant like credit score, past history and from those we will try to predict the loan granting status. We will also cleanse the data and fill in the missing values so that our ML model performs as expected. Thus we will be giving out a probability score along with Loan Granted or Loan Refused output from the model.
+## Project Overview
 
-Loan Approval/Eligibility Problem: ---
-This dataset concerns loan data. When a customer applies for
-a loan at our company, we use statistical models to
-determine whether or not to grant the loan based on the
-likelihood of the loan being repaid. The factors involved in
-determining this likelihood are complex, and extensive
-statistical analysis and modelling are required to predict the
-outcome for each individual case. You must implement a
-model that predicts if a loan should be granted to an
-individual based on the data provided
-The dataset used is an anonymized synthetic data that was
-generated specifically for use in this project. The data is
-designed to exhibit similar characteristics to genuine loan
-data.
+### Business Overview
 
-Description: ---
-In this dataset, you must explore and cleanse a dataset
-consisting of over 1,00,000 loan records to determine the
-best way to predict whether a loan applicant should be
-granted a loan or not. You must then build a machine
-learning model that returns the unique customer ID and a
-loan status label that indicates whether the loan should be
-given to that individual or not.
+SYL Bank is one of Australia’s largest banks, but they are facing challenges with their manual loan approval process. With a high volume of loan applications, the manual decision-making process has become subjective and time-consuming. To address this, SYL Bank aims to build an automated machine learning solution to assess loan applications and determine the loan grant status objectively.
 
-Data filesThe dataset consists of the
-following fields: ---
-• Loan ID: A unique Identifier for the loan information.
-• Customer ID: A unique identifier for the customer.
-Customers may have more than one loan.
-• Loan Status: A categorical variable indicating if the
-loan was given to this customer
-• Current Loan Amount: This is the loan amount
-that was either completely paid off, or the amount that
-was defaulted. This data is for previous loan
-• Term: A categorical variable indicating if it is a short
-term or long term loan.
-• Credit Score: A value between 0 and 800 indicating
-the riskiness of the borrower’s credit history.
-• Years in current job: A categorical variable indicating
-how many years the customer has been in their current job.
-• Home Ownership: Categorical variable indicating home
-ownership. Values are "Rent", "Home Mortgage", and
-"Own". If the value is OWN, then the customer is a home
-owner with no mortgage
-•Annual Income: The customer's annual income
-• Purpose: A description of the purpose of the loan.
+### Aim
 
+The objective of this machine learning project is to predict loan approval status based on various applicant attributes, such as credit score, past history, and demographic data. By leveraging classification models, we aim to automate the loan approval process and minimize the risk of loss for SYL Bank.
 
+### Loan Approval/Eligibility Problem
 
+This project involves predicting whether a loan should be granted to an individual based on their loan application data. The dataset consists of anonymized synthetic data generated specifically for this project, exhibiting similar characteristics to genuine loan data.
 
-# Execution Instructions
+### Data Description
 
+The dataset contains over 100,000 loan records with the following fields:
+- Loan ID
+- Customer ID
+- Loan Status
+- Current Loan Amount
+- Term (Short-term or Long-term)
+- Credit Score
+- Years in Current Job
+- Home Ownership
+- Annual Income
+- Purpose of the Loan
 
+## Execution Instructions
 
-# Python version 3.8.10
+### Python Version 3.8.10
 
-To create a virtual environment and install requirements in Python 3.8.10 on different operating systems, follow the instructions below:
+To create a virtual environment and install requirements:
 
-### For Windows:
+#### For Windows:
 
-Open the Command Prompt by pressing Win + R, typing "cmd", and pressing Enter.
+1. Open Command Prompt and navigate to the project directory:
 
-Change the directory to the desired location for your project:
 
-`cd C:\path\to\project`
+2. Create a virtual environment:
 
-Create a new virtual environment using the venv module:
 
-`python -m venv myenv`
+3. Activate the virtual environment:
 
-Activate the virtual environment:
 
-`myenv\Scripts\activate`
-
-Install the project requirements using pip:
-
-`pip install -r requirements.txt`
-
-
-### For Linux/Mac:
-
-Open a terminal.
-
-Change the directory to the desired location for your project:
-
-`cd /path/to/project`
-
-Create a new virtual environment using the venv module:
-
-`python3 -m venv myenv`
-
-Activate the virtual environment:
-
-`source myenv/bin/activate`
-
-Install the project requirements using pip:
-
-`pip install -r requirements.txt`
-
-These instructions assume you have Python 3.8.10 installed and added to your system's PATH variable.
-
-
-## Execution Instructions if Multiple Python Versions Installed
-
-
-If you have multiple Python versions installed on your system , you can use the Python Launcher to create a virtual environment with Python 3.8.10, you can specify the version using the -p or --python flag. Follow the instructions below:
-
-### For Windows:
-
-Open the Command Prompt by pressing Win + R, typing "cmd", and pressing Enter.
-
-Change the directory to the desired location for your project:
-
-`cd C:\path\to\project`
-
-Create a new virtual environment using the Python Launcher:
-
-`py -3.8 -m venv myenv`
-
-Note: Replace myenv with your desired virtual environment name.
-
-Activate the virtual environment:
-
-`myenv\Scripts\activate`
-
-Install the project requirements using pip:
-
-`pip install -r requirements.txt`
-
-
-For Linux/Mac:
-
-Open a terminal.
-
-Change the directory to the desired location for your project:
-
-`cd /path/to/project`
-
-Create a new virtual environment using the Python Launcher:
-
-`python3.8 -m venv myenv`
-Note: Replace myenv with your desired virtual environment name.
-
-Activate the virtual environment:
-
-`source myenv/bin/activate`
-Install the project requirements using pip:
-
-`pip install -r requirements.txt`
-
-
-By specifying the version using py -3.8 or python3.8, you can ensure that the virtual environment is created using Python 3.8.10 specifically, even if you have other Python versions installed.
-
-
-
-
-
+4. Install requirements:
 
